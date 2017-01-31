@@ -1,6 +1,8 @@
 # About BowFolios 
 
-BowFolios is a Meteor application providing portfolios for the UH Community.
+BowFolios is a Meteor application providing portfolios for the UH Community. When you come to the site, you are greeted by the following landing page:
+
+![](images/landing.png)
 
 Anyone with a UH account can login to BowFolios and create a profile that provides a biographical statement and list of interests, plus links to selected social media sites (GitHub, FaceBook, Instagram):
 
@@ -14,14 +16,7 @@ BowFolios also provides a filter page, available to those who can login to the s
 
 ![](images/filter.png)
 
-
-# Developer Guide
-
-### Milestone 1: Mockup development
-
-The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to 
-
-### Installation
+# Installation
 
 First, [install Meteor](https://www.meteor.com/install).
 
@@ -44,6 +39,8 @@ $ meteor --settings ../config/settings.development.json
 
 If all goes well, the application will appear at [http://localhost:3000](http://localhost:3000).  You can login using the credentials in [settings.development.json](https://github.com/ics-software-engineering/meteor-application-template/blob/master/config/settings.development.json), or else register a new account.
 
+
+# Application Design
 
 ### Directory structure
 
@@ -142,29 +139,6 @@ This system adopts the following naming conventions:
   * Templates representing pages are capitalized, with words separated by underscores. Example: Add_Stuff_Page.
   * Routes to pages are named the same as their corresponding page. Example: Add_Stuff_Page.
 
-### Preinstalled packages
-
-This application includes a number of additional packages useful for development. Here is a recent output of `meteor list`, with base packages removed.
-
-```
-accounts-password              1.3.0  Password support for accounts
-accounts-ui                    1.1.9  Simple templates to add login widgets to an app
-aldeed:autoform                5.8.1  Easily create forms with automatic insert and update.
-aldeed:collection2             2.10.0  Automatic validation of insert/update operations on client and server.
-arillo:flow-router-helpers     0.5.2  Template helpers for flow-router
-autopublish                    1.0.7  (For prototyping only) Publish the entire database to all clients
-check                          1.2.3  Check whether a value matches a pattern
-fabienb4:autoform-semantic-ui  0.9.3  Semantic-ui template for aldeed:autoform package.
-insecure                       1.0.7  (For prototyping only) Allow all database writes from the client
-juliancwirko:postcss           1.1.1  Minifier for Meteor with PostCSS processing
-kadira:blaze-layout            2.3.0  Layout Manager for Blaze (works well with FlowRouter)
-kadira:flow-router             2.12.1  Carefully Designed Client Side Router for Meteor
-less                           2.7.5  Leaner CSS language
-sacha:spin                     2.3.1  Simple spinner package for Meteor
-semantic:ui                    2.2.1  Official Semantic UI Integration for Meteor
-zimme:active-route             2.3.2  Active route helpers
-```
-
 
 ### Collections
 
@@ -230,4 +204,8 @@ ESLint should run without generating any errors.
 It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
 
 
+# Development History
 
+### Milestone 1: Mockup development
+
+The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to 
