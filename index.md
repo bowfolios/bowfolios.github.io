@@ -42,7 +42,7 @@ If all goes well, the application will appear at [http://localhost:3000](http://
 
 # Application Design
 
-### Directory structure
+## Directory structure
 
 The top-level directory structure is:
 
@@ -82,7 +82,7 @@ server/
    main.js       # import all the server-side js files.
 ```
 
-### Import conventions
+## Import conventions
 
 This system adheres to the Meteor 1.4 guideline of putting all application code in the imports/ directory, and using client/main.js and server/main.js to import the code appropriate for the client and server in an appropriate order.
 
@@ -129,7 +129,7 @@ if (Stuff.find().count() === 0) {
 ```
 
  
-### Naming conventions
+## Naming conventions
 
 This system adopts the following naming conventions:
 
@@ -140,7 +140,7 @@ This system adopts the following naming conventions:
   * Routes to pages are named the same as their corresponding page. Example: Add_Stuff_Page.
 
 
-### Collections
+## Collections
 
 The application implements a single Collection called "Stuff". Each Stuff document has two fields: a String "name" and a Number "quantity".
 
@@ -150,7 +150,7 @@ The Stuff collection is initialized in [imports/startup/server/stuff.js](https:/
 
 Note that this system uses autopublish to avoid the need to define publications and subscriptions.  That said, any templates presenting collection data must use `Template.subscriptionsReady` to ensure that subscription data is available before template rendering. See [imports/ui/pages/list-stuff-page.html](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/ui/pages/list-stuff-page.html) for an example.
 
-### CSS
+## CSS
 
 The application uses [Semantic UI](http://semantic-ui.com/), and installs one Meteor packages: `fabienb4:autoform-semantic-ui`.
 
@@ -160,13 +160,13 @@ Because the application implements a menu fixed to the top of the screen, the [a
 
 To learn more about the Semantic UI theme, see [Semantic-UI-Meteor](https://github.com/Semantic-Org/Semantic-UI-Meteor).
 
-### Routing
+## Routing
 
 For display and navigation among its four pages, the application uses [Flow Router](https://github.com/kadirahq/flow-router).
 
 Routing is defined in [imports/startup/client/router.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/startup/client/router.js).
 
-### Authentication
+## Authentication
 
 For authentication, the application uses the Meteor accounts-ui package, with some simple customization in [imports/startup/both/accounts-config.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/startup/both/accounts-config.js).
 
@@ -174,7 +174,7 @@ When the application is run for the first time, a settings file (such as [config
 
 The application allows users to register and create new accounts at any time.
 
-### Authorization
+## Authorization
 
 Only logged in users can manipulate Stuff documents (but any registered user can manipulate any Stuff document, even if they weren't the user that created it.)
 
@@ -182,13 +182,13 @@ To prevent users who are not logged in from accessing pages that manipulate Stuf
 
 The application implements template-based authorization using an If_Logged_In template, defined in [imports/ui/layouts/if-logged-in.html](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/ui/layouts/if-logged-in.html) and [imports/ui/layouts/if-logged-in.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/ui/layouts/if-logged-in.js).
 
-### Configuration
+## Configuration
 
 The [config](https://github.com/ics-software-engineering/meteor-application-template/tree/master/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/ics-software-engineering/meteor-application-template/blob/master/config/settings.development.json).
 
 The [.gitignore](https://github.com/ics-software-engineering/meteor-application-template/blob/master/.gitignore) file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
 
-### Quality Assurance: ESLint
+## Quality Assurance
 
 The application includes a [.eslintrc](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
@@ -206,6 +206,32 @@ It's significantly easier to do development with ESLint integrated directly into
 
 # Development History
 
-### Milestone 1: Mockup development
+The development process for BowFolios conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314f16/modules/project-management/) practices. In a nutshell, development consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
 
-The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to 
+The following sections document the development history of BowFolios.
+
+## Milestone 1: Mockup development
+
+The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to implement routing to the pages. 
+
+Mockups for the following four pages were implemented during M1:
+
+<img width="200px" src="images/landing.png"/>
+<img width="200px" src="images/profile.png"/>
+<img width="200px" src="images/directory.png"/>
+<img width="200px" src="images/filter.png"/>
+
+Milestone 1 was implemented as [BowFolio GitHub Milestone M1](https://github.com/bowfolios/bowfolios/milestone/1)::
+
+![](images/m1-milestone.png)
+
+
+Milestone 1 consisted of five issues, and progress was managed via the [BowFolio GitHub Project M1](https://github.com/bowfolios/bowfolios/projects/1):
+
+![](images/m1-project.png)
+
+Issue Driven Project Management practices were used 
+
+
+
+
