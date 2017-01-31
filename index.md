@@ -230,7 +230,11 @@ Milestone 1 consisted of five issues, and progress was managed via the [BowFolio
 
 ![](images/m1-project.png)
 
-Issue Driven Project Management practices were used 
+Each issue was implemented in its own branch, and merged into master when completed:
+
+![](images/m1-branch-graph.png)
+
+
 
 
 
