@@ -1,0 +1,8 @@
+title: BowFolios
+description: Portfolios and Networking for the UH Community
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
