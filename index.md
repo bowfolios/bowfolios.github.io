@@ -1,16 +1,21 @@
+# About BowFolios 
+
 BowFolios is a Meteor application providing portfolios for the UH Community.
 
 Anyone with a UH account can login to BowFolios and create a profile that provides a biographical statement and list of interests, plus links to selected social media sites (GitHub, FaceBook, Instagram):
 
 ![](images/profile.png)
   
-  
-After creating a profile, the user will be listed 
+After creating a profile, the user will be listed on the public directory page:
+
+![](images/directory.png)
+
+BowFolios also provides a filter page, available to those who can login to the system with their UH account. The filter page allows you to display all portfolios with a given interest:
+
+![](images/filter.png)
 
 
-
-
-## Developer Guide
+# Developer Guide
 
 ### Milestone 1: Mockup development
 
