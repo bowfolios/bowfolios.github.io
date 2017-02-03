@@ -234,6 +234,29 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![](images/m1-branch-graph.png)
 
+## Milestone 2: Data model development
+
+The goal of Milestone 2 was to implement the data model: the underlying set of Mongo Collections and the operations upon them that would support the BowFolio application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
+ 
+Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  Here is a screenshot of the browser interface to the Mocha test driver:
+
+![](images/m2-mocha-tests.png)
+
+Milestone 2 was implemented as [BowFolio GitHub Milestone M2](https://github.com/bowfolios/bowfolios/milestone/2)::
+
+![](images/m2-milestone.png)
+
+
+Milestone 2 consisted of two issues, and progress was managed via the [BowFolio GitHub Project M2](https://github.com/bowfolios/bowfolios/projects/2):
+
+![](images/m2-project.png)
+
+Each issue was implemented in its own branch, and merged into master when completed:
+
+![](images/m2-branch-graph.png)
+
+
+
 
 
 
