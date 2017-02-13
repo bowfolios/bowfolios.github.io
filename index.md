@@ -1,3 +1,23 @@
+# Table of contents
+
+* [About Bowfolios](#about-bowfolios)
+* [Installation](#installation)
+* [Application design](#application-design)
+  * [Directory structure](#directory-structure)
+  * [Import conventions](#import-conventions)
+  * [Naming conventions](#naming-conventions)
+  * [Data model](#data-model)
+  * [CSS](#css)
+  * [Routing](#routing)
+  * [Authentication](#authentication)
+  * [Authorization](#authorization)
+  * [Configuration](#configuration)
+  * [Quality Assurance](#quality-assurance)
+* [Development history](#development-history)
+  * [Milestone 1: Mockup development](#milestone-1-mockup-development)
+  * [Milestone 2: Data model development](#milestone-2-data-model-development)
+  * [Milestone 3: Connect UI to data model](#milestone-3-connect-ui-to-data-model)
+
 # About BowFolios 
 
 BowFolios is a Meteor application providing portfolios for the UH Community. When you come to the site, you are greeted by the following landing page:
@@ -112,7 +132,7 @@ This system adopts the following naming conventions:
   * Routes to pages are named the same as their corresponding page. Example: Add_Stuff_Page.
 
 
-## Collections
+## Data model
 
 The application implements a single Collection called "Stuff". Each Stuff document has two fields: a String "name" and a Number "quantity".
 
