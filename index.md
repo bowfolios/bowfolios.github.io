@@ -20,7 +20,7 @@
 
 # About BowFolios 
 
-BowFolios is a Meteor application providing portfolios for the UH Community. When you come to the site, you are greeted by the following landing page:
+BowFolios is a Meteor application providing portfolios for the University of Hawaii Community. When you come to the site, you are greeted by the following landing page:
 
 ![](images/landing.png)
 
