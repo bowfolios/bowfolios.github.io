@@ -20,25 +20,21 @@ BowFolios also provides a filter page, available to those who can login to the s
 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, [create a new GitHub repository](https://help.github.com/articles/create-a-repo/), and clone it into your local workspace.
-
-Third, [download a zip file containing a snapshot of BowFolios](https://github.com/ics-software-engineering/meteor-application-template/archive/master.zip).
-
-Fourth, uncompress the zip file, and copy the following files and directories into your repo:
-
-  * app/  
-  * config/
-  * .gitignore
+Second, [download a copy of BowFolios](https://github.com/ics-software-engineering/meteor-application-template/archive/master.zip), or clone it using git.
   
-Now your local repo should contain the system. To test that everything is OK, cd into the app directory and run the application with the following two commands:
+Third, cd into the app/ directory and install libraries with:
 
 ```
 $ meteor npm install
-$ meteor --settings ../config/settings.development.json
 ```
 
-If all goes well, the application will appear at [http://localhost:3000](http://localhost:3000).  You can login using the credentials in [settings.development.json](https://github.com/ics-software-engineering/meteor-application-template/blob/master/config/settings.development.json), or else register a new account.
+Fourth, run the system with:
 
+```
+$ meteor npm run start
+```
+
+If all goes well, the application will appear at [http://localhost:3000](http://localhost:3000). If you have an account on the UH test CAS server, you can login.  
 
 # Application Design
 
@@ -103,31 +99,7 @@ Apart from the last line that imports style.css directly, the other lines all in
 
 We use this approach to make it more simple to understand what code is loaded and in what order, and to simplify debugging when some code or templates do not appear to be loaded.  In our approach, there are only two places to look for top-level imports: the main.js files in client/ and server/, and the index.js files in import subdirectories. 
 
-Note that this two-level import structure ensures that all code and templates are loaded, but does not ensure that the symbols needed in a given file are accessible.  So, for example, a symbol bound to a collection still needs to be imported into any file that references it. For example, a server startup file needs to reference the symbol "Stuff" in order to initialize the collection, so it must import the symbol Stuff:
-
-```
-import { Stuff } from '../../api/stuff/stuff.js';
-import { _ } from 'meteor/underscore';
-
-/**
- * A list of Stuff to pre-fill the Collection.
- * @type {*[]}
- */
-const stuffSeeds = [
-  { name: 'Basket', quantity: 3 },
-  { name: 'Bicycle', quantity: 2 },
-];
-
-/**
- * Initialize the Stuff collection if empty with seed data.
- */
-if (Stuff.find().count() === 0) {
-  _.each(stuffSeeds, function seedStuffs(stuff) {
-    Stuff.insert(stuff);
-  });
-}
-```
-
+Note that this two-level import structure ensures that all code and templates are loaded, but does not ensure that the symbols needed in a given file are accessible.  So, for example, a symbol bound to a collection still needs to be imported into any file that references it. 
  
 ## Naming conventions
 
@@ -254,6 +226,23 @@ Milestone 2 consisted of two issues, and progress was managed via the [BowFolio 
 Each issue was implemented in its own branch, and merged into master when completed:
 
 ![](images/m2-branch-graph.png)
+
+## Milestone 3: Connect UI to data model
+
+The goal of Milestone 3 was to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we created Javascript files for the templates with helper functions. We used the form control templates from [meteor-example-form](https://ics-software-engineering.github.io/meteor-example-form/) to simplify implementation of form processing.
+
+Milestone 3 was implemented as [BowFolio GitHub Milestone M3](https://github.com/bowfolios/bowfolios/milestone/3)::
+
+![](images/m3-milestone.png)
+
+
+Milestone 3 consisted of four issues, and progress was managed via the [BowFolio GitHub Project M3](https://github.com/bowfolios/bowfolios/projects/3):
+
+![](images/m3-project.png)
+
+Each issue was implemented in its own branch, and merged into master when completed:
+
+![](images/m3-branch-graph.png)
 
 
 
