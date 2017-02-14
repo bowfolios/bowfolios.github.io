@@ -199,8 +199,8 @@ BowFolios defines the following routes:
 
   * The `/` route goes to the public landing page.
   * The `/directory` route goes to the public directory page.
-  * The `/<user>/profile` route goes to the profile page associated with `<user`, which is the UH account name.
-  * The `/<user>/filter` route goes to the filter page associated with `<user`, which is the UH account name.
+  * The `/<user>/profile` route goes to the profile page associated with `<user>`, which is the UH account name.
+  * The `/<user>/filter` route goes to the filter page associated with `<user>`, which is the UH account name.
 
 
 ## Authentication
