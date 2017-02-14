@@ -297,7 +297,7 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 This milestone started on Feb 14, 2017 and is ongoing.
 
-[BowFolio GitHub Milestone 5](https://github.com/bowfolios/bowfolios/milestone/4) involves the creation of an administrator role in the system. The administrator can manage the set of defined interests. (Currently, interests are defined in the database file loaded at system startup time.)
+[BowFolio GitHub Milestone 5](https://github.com/bowfolios/bowfolios/milestone/5) involves the creation of an administrator role in the system. The administrator can manage the set of defined interests. (Currently, interests are defined in the database file loaded at system startup time.)
 
 This milestone will also include the implementation of Meteor methods and removal of the insecure package. 
 
