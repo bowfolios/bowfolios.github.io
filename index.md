@@ -255,7 +255,7 @@ To see the results, visit http://localhost:3100. Here is what a successful run l
  
 ![](images/m2-mocha-tests.png)
 
-### JSDocs
+### JSDoc
 
 BowFolios supports documentation generation with [JSDoc](http://usejsdoc.org/). The package.json file defines a script called jsdoc that runs JSDoc over the source files and outputs html to the ../../bowfolio.github.io/jsdoc directory.  When committed, the index.html file providing an overview of all the documentation generate at that point in time is available at [http://bowfolios.github.io/jsdocs](https://bowfolios.github.io/jsdocs/). 
 
