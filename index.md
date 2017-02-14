@@ -52,7 +52,6 @@ Third, cd into the app/ directory and install libraries with:
 
 ```
 $ meteor npm install
-meteor npm install --save babel-runtime
 ```
 
 Fourth, run the system with:
@@ -224,9 +223,13 @@ The [config](https://github.com/bowfolios/bowfolios/tree/master/config) director
 
 The [.gitignore](https://github.com/bowfolios/bowfolios/blob/master/.gitignore) file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
 
+BowFolios checks on startup to see if it has an empty database in [initialize-database.js](https://github.com/bowfolios/bowfolios/blob/master/app/imports/startup/server/initialize-database.js), and if so, loads the file specified in the configuration file, such as [settings.development.json](https://github.com/bowfolios/bowfolios/blob/master/config/settings.development.json).  For development purposes, a sample initialization for this database is in [initial-collection-data.json](https://github.com/bowfolios/bowfolios/blob/master/app/private/database/initial-collection-data.json).
+
 ## Quality Assurance
 
-The application includes a [.eslintrc](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+### ESLint
+
+BowFolios includes a [.eslintrc](https://github.com/bowfolios/bowfolios/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
 ```
 meteor npm run lint
@@ -235,6 +238,18 @@ meteor npm run lint
 ESLint should run without generating any errors.  
 
 It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
+
+### Data model unit tests
+
+BowFolios includes unit tests for the data model. You can invoke them with:
+
+```
+meteor npm run test-watch
+```
+
+To see the results, visit http://localhost:3100. Here is what a successful run looks like:
+ 
+![](images/m2-mocha-tests.png)
 
 # Development History
 
@@ -274,9 +289,7 @@ This milestone started on Jan 31, 2017 and ended on Feb 2, 2017.
 
 The goal of Milestone 2 was to implement the data model: the underlying set of Mongo Collections and the operations upon them that would support the BowFolio application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
  
-Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  Here is a screenshot of the browser interface to the Mocha test driver:
-
-![](images/m2-mocha-tests.png)
+Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  These tests are documented above.
 
 Milestone 2 was implemented as [BowFolio GitHub Milestone M2](https://github.com/bowfolios/bowfolios/milestone/2)::
 
