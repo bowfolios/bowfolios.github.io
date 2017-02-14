@@ -20,7 +20,7 @@
 
 # About BowFolios 
 
-BowFolios is a Meteor application providing portfolios for the University of Hawaii Community. When you come to the site, you are greeted by the following landing page:
+BowFolios is a Meteor application providing portfolios for the University of Hawaii community. When you come to the site, you are greeted by the following landing page:
 
 ![](images/landing.png)
 
@@ -202,7 +202,7 @@ The development process for BowFolios conformed to [Issue Driven Project Managem
 
 The following sections document the development history of BowFolios.
 
-## Milestone 1: Mockup development
+## Milestone 1: Mockup development (Dec 6, 2016 - Jan 31, 2017)
 
 The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to implement routing to the pages. 
 
@@ -226,7 +226,7 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![](images/m1-branch-graph.png)
 
-## Milestone 2: Data model development
+## Milestone 2: Data model development (Jan 31 - Feb 2, 2017)
 
 The goal of Milestone 2 was to implement the data model: the underlying set of Mongo Collections and the operations upon them that would support the BowFolio application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
  
@@ -247,7 +247,7 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![](images/m2-branch-graph.png)
 
-## Milestone 3: Connect UI to data model
+## Milestone 3: Connect UI to data model (Feb 2 - Feb 10, 2017)
 
 The goal of Milestone 3 was to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we created Javascript files for the templates with helper functions. We used the form control templates from [meteor-example-form](https://ics-software-engineering.github.io/meteor-example-form/) to simplify implementation of form processing.
 
@@ -263,6 +263,35 @@ Milestone 3 consisted of four issues, and progress was managed via the [BowFolio
 Each issue was implemented in its own branch, and merged into master when completed:
 
 ![](images/m3-branch-graph.png)
+
+## Milestone 4: Authentication (Feb 10 - Feb 14, 2017)
+
+The goal of Milestone 4 was to set up authentication using the University of Hawaii test CAS system. We used the templates from [meteor-example-uh-cas](http://ics-software-engineering.github.io/meteor-example-uh-cas/) to guide the implementation. Although the example restricts logins to those in a list in the configuration file, BowFolios allows anyone with a UH account to access the system. 
+
+Authentication also implies that users cannot access the profile or filter page associated with another user.
+
+Milestone 4 was implemented as [BowFolio GitHub Milestone M4](https://github.com/bowfolios/bowfolios/milestone/4)::
+
+![](images/m4-milestone.png)
+
+
+Milestone 4 consisted of two issues, and progress was managed via the [BowFolio GitHub Project M4](https://github.com/bowfolios/bowfolios/projects/4):
+
+![](images/m4-project.png)
+
+Each issue was implemented in its own branch, and merged into master when completed:
+
+![](images/m4-branch-graph.png)
+
+## Milestone 5: Administration (Feb 14, 2017 - present)
+
+[BowFolio GitHub Milestone 5](https://github.com/bowfolios/bowfolios/milestone/4) involves the creation of an administrator role in the system. The administrator can manage the set of defined interests. (Currently, interests are defined in the database file loaded at system startup time.)
+
+This milestone will also include the implementation of Meteor methods and removal of the insecure package. 
+
+We will manage progress on this milestone using [BowFolio GitHub Project M5](https://github.com/bowfolios/bowfolios/projects/5).
+
+
 
 
 
