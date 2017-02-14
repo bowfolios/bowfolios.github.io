@@ -13,12 +13,16 @@
   * [Authorization](#authorization)
   * [Configuration](#configuration)
   * [Quality Assurance](#quality-assurance)
+    * [ESLint](#eslint)
+    * [Data model unit tests](#data-model-unit-tests)
+    * [JSDoc](#JSDoc)
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   * [Milestone 2: Data model development](#milestone-2-data-model-development)
   * [Milestone 3: Connect UI to data model](#milestone-3-connect-ui-to-data-model)
   * [Milestone 4: Authentication](#milestone-4-authentication)
   * [Milestone 5: Administration](#milestone-5-administration)
+* [JSDocs](/jsdocs)
 
 # About BowFolios 
 
@@ -250,6 +254,10 @@ meteor npm run test-watch
 To see the results, visit http://localhost:3100. Here is what a successful run looks like:
  
 ![](images/m2-mocha-tests.png)
+
+### JSDocs
+
+BowFolios supports documentation generation with [JSDoc](http://usejsdoc.org/). The package.json file defines a script called jsdoc that runs JSDoc over the source files and outputs html to the ../../bowfolio.github.io/jsdoc directory.  When committed, the index.html file providing an overview of all the documentation generate at that point in time is available at [http://bowfolios.github.io/jsdocs](https://bowfolios.github.io/jsdocs/). 
 
 # Development History
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>ui/pages/directory/directory-page.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -28,25 +28,35 @@
 
 <div id="main">
     
+    <h1 class="page-title">ui/pages/directory/directory-page.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { Template } from 'meteor/templating';
+import { Profiles } from '/imports/api/profile/ProfileCollection';
 
+Template.Directory_Page.onCreated(function onCreated() {
+  this.subscribe(Profiles.getPublicationName());
+});
 
+Template.Directory_Page.helpers({
 
-
-
-
-
-
-
-    
-
-
-
+  /**
+   * Returns a cursor to profiles, sorted by last name.
+   */
+  profiles() {
+    return Profiles.find({}, { sort: { lastName: 1 } });
+  },
+});
+</code></pre>
+        </article>
+    </section>
 
 
 
