@@ -202,7 +202,9 @@ The development process for BowFolios conformed to [Issue Driven Project Managem
 
 The following sections document the development history of BowFolios.
 
-## Milestone 1: Mockup development (Dec 6, 2016 - Jan 31, 2017)
+## Milestone 1: Mockup development
+
+This milestone started on December 6, 2016 and ended on January 31, 2017.
 
 The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to implement routing to the pages. 
 
@@ -226,7 +228,9 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![](images/m1-branch-graph.png)
 
-## Milestone 2: Data model development (Jan 31 - Feb 2, 2017)
+## Milestone 2: Data model development 
+
+This milestone started on Jan 31, 2017 and ended on Feb 2, 2017.
 
 The goal of Milestone 2 was to implement the data model: the underlying set of Mongo Collections and the operations upon them that would support the BowFolio application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
  
@@ -247,7 +251,9 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![](images/m2-branch-graph.png)
 
-## Milestone 3: Connect UI to data model (Feb 2 - Feb 10, 2017)
+## Milestone 3: Connect UI to data model
+
+This milestone started on Feb 2, 2017 and ended on Feb 10, 2017.
 
 The goal of Milestone 3 was to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we created Javascript files for the templates with helper functions. We used the form control templates from [meteor-example-form](https://ics-software-engineering.github.io/meteor-example-form/) to simplify implementation of form processing.
 
@@ -264,7 +270,9 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![](images/m3-branch-graph.png)
 
-## Milestone 4: Authentication (Feb 10 - Feb 14, 2017)
+## Milestone 4: Authentication
+
+This milestone started on Feb 10, 2017 and ended on Feb 14, 2017.
 
 The goal of Milestone 4 was to set up authentication using the University of Hawaii test CAS system. We used the templates from [meteor-example-uh-cas](http://ics-software-engineering.github.io/meteor-example-uh-cas/) to guide the implementation. Although the example restricts logins to those in a list in the configuration file, BowFolios allows anyone with a UH account to access the system. 
 
@@ -283,7 +291,9 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ![](images/m4-branch-graph.png)
 
-## Milestone 5: Administration (Feb 14, 2017 - present)
+## Milestone 5: Administration
+
+This milestone started on Feb 14, 2017 and is ongoing.
 
 [BowFolio GitHub Milestone 5](https://github.com/bowfolios/bowfolios/milestone/4) involves the creation of an administrator role in the system. The administrator can manage the set of defined interests. (Currently, interests are defined in the database file loaded at system startup time.)
 
