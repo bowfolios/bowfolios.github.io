@@ -26,11 +26,15 @@ BowFolios is a Meteor application providing portfolios for the University of Haw
 
 ![](images/landing.png)
 
-Anyone with a UH account can login to BowFolios and create a profile that provides a biographical statement and list of interests, plus links to selected social media sites (GitHub, FaceBook, Instagram):
+Anyone with a UH account can login to BowFolios by clicking on the login button. The UH CAS authentication screen then appears and requests your UH account and password:
+ 
+![](images/bowfolios-cas.png)
+ 
+Once authenticated, you can create a profile that provides a biographical statement and list of interests, plus links to selected social media sites (GitHub, FaceBook, Instagram):
 
 ![](images/profile.png)
   
-After creating a profile, the user will be listed on the public directory page:
+After creating a profile, you will be listed on the public directory page:
 
 ![](images/directory.png)
 
