@@ -248,7 +248,7 @@ This outputs the results to the console. Here is an example of a successful run,
 [~/github/bowfolios/bowfolios/app]-> meteor npm run test
 
 > bowfolios@ test /Users/philipjohnson/github/bowfolios/bowfolios/app
-> meteor test --once --driver-package dispatch:mocha
+> TEST_WATCH=1 meteor test --driver-package meteortesting:mocha
 
 [[[[[ Tests ]]]]]                             
 
