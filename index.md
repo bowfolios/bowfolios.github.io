@@ -402,6 +402,7 @@ BowFolios is intended as a model of how an ICS 314 project could be organized an
 * [BowFolios: Authentication and Authorization](https://www.youtube.com/watch?v=AaXShN8cYNY)
 * [BowFolios: Initialization](https://www.youtube.com/watch?v=P3Kigb1gtVo)
 * [BowFolios: Unit Testing](https://www.youtube.com/watch?v=EexZfw1yMJs)
+* [BowFolios: Design Patterns](https://www.youtube.com/watch?v=yP-t44HBCPQ). Maybe watch [this](https://www.youtube.com/watch?v=Z2yjimK_MJU) first.
 
 
 
