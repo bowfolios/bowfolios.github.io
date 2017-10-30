@@ -51,7 +51,7 @@ BowFolios also provides a filter page, available to those who can login to the s
 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, [download a copy of BowFolios](https://github.com/ics-software-engineering/meteor-application-template/archive/master.zip), or clone it using git.
+Second, [download a copy of BowFolios](https://github.com/bowfolios/bowfolios/archive/master.zip), or clone it using git.
   
 Third, cd into the app/ directory and install libraries with:
 
