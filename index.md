@@ -24,8 +24,9 @@ It also provides code that implements a variety of useful design concepts, inclu
 * Initialization code to define default Profiles, Interests, and Projects and relations between them.
 * A simple Filter page to illustrate how to perform simple queries on the database and display the results.  
 * Use of Meteor Methods to illustrate how to simplify implementation of multiple collection updates.
-* Use of indexes to enforce uniqueness of certain fields in the collections, making them primary keys.  
-* Certain pages are public (Profiles, Projects, Interests), while other pages require login (AddProject, Filter).
+* Use of indexes to enforce uniqueness of certain fields in the collections, enabling them to serve as primary keys.
+* Authentication using the built-in Meteor accounts package along with Sign Up and Sign In pages.   
+* Authorization examples: certain pages are public (Profiles, Projects, Interests), while other pages require login (AddProject, Filter).
 
 ## User Guide
 
@@ -85,7 +86,7 @@ The Filter page provides the ability to query the database and display the resul
 
 ## Community Feedback 
 
-(Not yet available.)
+We are interested in your experience using Bowfolio!  If you would like, please take a couple of minutes to fill out the [Bowfolios Feedback Form](https://forms.gle/hBHdccQEbm4YNfPd6). It contains only five short questions and will help us understand how to improve the system. 
 
 ## Developer Guide
 
@@ -205,13 +206,10 @@ As of the time of writing, this screenshot shows that there is an ongoing task (
 
 BowFolios is intended as a model of how an ICS 314 project could be organized and executed. Here are some videos to walk through various aspects of the system and development process:
 
-* [BowFolios: User Interface](https://www.youtube.com/watch?v=aZvxRQfQdkE)
-* [BowFolios: Development Process](https://www.youtube.com/watch?v=8pTgFtbcjTc)
-* [BowFolios: Application Structure](https://www.youtube.com/watch?v=_5g5CzZ0Toc)
-* [BowFolios: Authentication and Authorization](https://www.youtube.com/watch?v=AaXShN8cYNY)
-* [BowFolios: Initialization](https://www.youtube.com/watch?v=P3Kigb1gtVo)
-* [BowFolios: Unit Testing](https://www.youtube.com/watch?v=EexZfw1yMJs)
-* [BowFolios: Design Patterns](https://www.youtube.com/watch?v=yP-t44HBCPQ). Maybe watch [this](https://www.youtube.com/watch?v=Z2yjimK_MJU) first.
+* [BowFolios Part 1: Application Overview (5 min)](https://www.youtube.com/watch?v=gr55MMWD8ok)
+* [BowFolios Part 2: Application Structure and Control Flow (14 min)](https://www.youtube.com/watch?v=LYh06HSYv54)
+* [BowFolios Part 3: Data Model, Data Initialization, Publications and Subscriptions (22 min)](https://www.youtube.com/watch?v=2F2Cw5Ipubc)
+* [BowFolios Part 4: Forms and Meteor Methods](https://www.youtube.com/watch?v=5qim9mXpbTM)
 
 ## Design enhancements
 
