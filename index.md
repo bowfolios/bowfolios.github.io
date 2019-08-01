@@ -217,10 +217,12 @@ BowFolios is intended as a model of how an ICS 314 project could be organized an
 There are a number of simple enhancements you can make to the system to become better acquainted with the codebase:
 
 * Display an email icon that links to a mailto: for each user in the profile page. 
+* Display the home page for each project as a home icon. Click on it to visit the Project's home page. 
 * Add social media accounts to the profile (facebook, twitter, instagram) and show the associated icon in the Profile.
 * The system supports the definition of users with an Admin role, but there are no Admin-specific capabilities. Implement some Admin-specific functions, such as the ability to delete users or add/modify/delete Interests.
-* There is no way to edit a project definition. Add this ability.  
+* There is no way to edit or delete a project definition. Add this ability.  
 * It would be nice for users to only be able to edit the Projects that they have created.  Add an "owner" field to the Project collection, and then only allow a user to edit a Project definition if they own it. 
+* The error message associated with trying to define a new Project with an existing Project name is uninformative. Try it out for yourself to see what happens. Fix this by improving the associated Meteor Method to "catch" errors of this type and re-throw with a more informative error message.
 
 
 
