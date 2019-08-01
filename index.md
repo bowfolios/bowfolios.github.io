@@ -22,12 +22,6 @@ BowFolios is an example Meteor 1.8 application that provides pages to view and (
 * Use of indexes to enforce uniqueness of certain fields in the collections, making them primary keys.  
 * Certain pages are public (Profiles, Projects, Interests), while other pages require login (AddProject, Filter).
 
-Bowfolios is meant to illustrate the use of Meteor for developing an initial proof-of-concept prototype.  For a production application, several additional security-related changes must be implemented:
-
-* Use of email-based password specification for users, and/or use of an alternative authentication mechanism.
-* Use of https so that passwords are sent in encrypted format.
-* Removal of the insecure package, and the addition of Meteor Methods to replace client-side DB updates. 
-
 ## User Guide
 
 This section provides a walkthrough of the Bowfolios user interface and its capabilities. 
@@ -69,7 +63,7 @@ Alternatively, you can use this page to create a new account and sign in:
   
 After logging in, you are taken to the home page, which presents a form where you can complete and/or update your personal profile:
 
-![](images/add-project-page.png)
+![](images/home-page.png)
 
 ### Filter page
 
@@ -143,6 +137,16 @@ meteor npm run lint
 ESLint should run without generating any errors.  
 
 It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
+
+### From mockup to production
+
+Bowfolios is meant to illustrate the use of Meteor for developing an initial proof-of-concept prototype.  For a production application, several additional security-related changes must be implemented:
+
+* Use of email-based password specification for users, and/or use of an alternative authentication mechanism.
+* Use of https so that passwords are sent in encrypted format.
+* Removal of the insecure package, and the addition of Meteor Methods to replace client-side DB updates. 
+
+(Note that these changes do not need to be implemented for ICS 314, although they are relatively straightforward to accomplish.)
 
 ## Development History
 
