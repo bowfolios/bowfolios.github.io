@@ -6,7 +6,7 @@
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
 * [Walkthrough videos](#walkthrough-videos)
-* [Design enhancements](#design-enhancements)
+* [Example enhancements](#example-enhancements)
 
 ## Overview 
 
@@ -204,14 +204,14 @@ As of the time of writing, this screenshot shows that there is an ongoing task (
 
 ## Walkthrough videos
 
-BowFolios is intended as a model of how an ICS 314 project could be organized and executed. Here are some videos to walk through various aspects of the system and development process:
+BowFolios is intended as a model of how an ICS 314 project could be organized and executed. Here are four videos totalling about an hour that walks you through various aspects of the system:
 
 * [BowFolios Part 1: Application Overview (5 min)](https://www.youtube.com/watch?v=gr55MMWD8ok)
 * [BowFolios Part 2: Application Structure and Control Flow (14 min)](https://www.youtube.com/watch?v=LYh06HSYv54)
 * [BowFolios Part 3: Data Model, Data Initialization, Publications and Subscriptions (22 min)](https://www.youtube.com/watch?v=2F2Cw5Ipubc)
-* [BowFolios Part 4: Forms and Meteor Methods](https://www.youtube.com/watch?v=5qim9mXpbTM)
+* [BowFolios Part 4: Forms and Meteor Methods (20 min)](https://www.youtube.com/watch?v=5qim9mXpbTM)
 
-## Design enhancements
+## Example enhancements
 
 There are a number of simple enhancements you can make to the system to become better acquainted with the codebase:
 
