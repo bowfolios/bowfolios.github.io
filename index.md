@@ -9,11 +9,15 @@
 
 ## Overview 
 
-BowFolios is an example Meteor 1.8 application that provides pages to view and (in some cases) modify profiles, projects, and interests. It is designed to provide executable code implementing several useful design concepts for ICS software engineering students, including:
+BowFolios is an example web application that provides pages to view and (in some cases) modify profiles, projects, and interests. It illustrates various technologies useful to ICS software engineering students, including:
 
-* React for component-based UI implemetation and React Router for routing.
-* Semantic UI CSS Framework for UI design.
-* Uniforms for form design and display.
+* [Meteor](https://www.meteor.com/) for Javascript-based implementation of client and server code. 
+* [React](https://reactjs.org/) for component-based UI implementation and routing.
+* [Semantic UI React](https://react.semantic-ui.com/) CSS Framework for UI design.
+* [Uniforms](https://uniforms.tools/) for React and Semantic UI-based form design and display.
+
+It also provides code that implements a variety of useful design concepts, including:
+
 * Three primary collections (Profiles, Projects, Interests) as well as three "join" Collections (ProfilesInterests, ProfilesProjects, and ProjectsInterests) that implement many-to-many relationships between them.
 * Top-level index pages (Profiles, Interests, and Projects) that show how to manipulate these six collections in various ways.
 * Initialization code to define default Profiles, Interests, and Projects and relations between them.
