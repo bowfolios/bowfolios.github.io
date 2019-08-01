@@ -67,8 +67,7 @@ After logging in, you are taken to the home page, which presents a form where yo
 
 ### Filter page
 
-The Filter page provides the ability to query the database and display the results in the page. In this case, the query is 
-to display all of the Profiles that match one or more of the specified Interest(s).
+The Filter page provides the ability to query the database and display the results in the page. In this case, the query displays all of the Profiles that match one or more of the specified Interest(s).
 
 ![](images/filter-page.png)
 
@@ -115,6 +114,8 @@ Design choice #2:  Provide a "join" collection where each document contains two 
 Bowfolios implements Design choice #2 to provide pair-wise relations between all three of its primary collections:
 
 ![](images/data-model.png)
+
+The fields in boldface (Email for Profiles, and Name for Projects and Interests) indicate that those fields must have unique values so that they can be used as a primary key for that collection. This constraint is enforced in the schema definition associated with that collection. 
 
 
 ## Initialization
