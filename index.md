@@ -6,6 +6,7 @@
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
 * [Walkthrough videos](#walkthrough-videos)
+* [Design enhancements](#design-enhancements)
 
 ## Overview 
 
