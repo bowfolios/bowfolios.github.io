@@ -200,7 +200,7 @@ Milestone 3 was managed using [BowFolio GitHub Project Board M3](https://github.
 
 As of the time of writing, this screenshot shows that there is an ongoing task (i.e. this writing).
 
-# Walkthrough videos
+## Walkthrough videos
 
 BowFolios is intended as a model of how an ICS 314 project could be organized and executed. Here are some videos to walk through various aspects of the system and development process:
 
@@ -212,7 +212,15 @@ BowFolios is intended as a model of how an ICS 314 project could be organized an
 * [BowFolios: Unit Testing](https://www.youtube.com/watch?v=EexZfw1yMJs)
 * [BowFolios: Design Patterns](https://www.youtube.com/watch?v=yP-t44HBCPQ). Maybe watch [this](https://www.youtube.com/watch?v=Z2yjimK_MJU) first.
 
+## Design enhancements
 
+There are a number of simple enhancements you can make to the system to become better acquainted with the codebase:
+
+* Display an email icon that links to a mailto: for each user in the profile page. 
+* Add social media accounts to the profile (facebook, twitter, instagram) and show the associated icon in the Profile.
+* The system supports the definition of users with an Admin role, but there are no Admin-specific capabilities. Implement some Admin-specific functions, such as the ability to delete users or add/modify/delete Interests.
+* There is no way to edit a project definition. Add this ability.  
+* It would be nice for users to only be able to edit the Projects that they have created.  Add an "owner" field to the Project collection, and then only allow a user to edit a Project definition if they own it. 
 
 
 
