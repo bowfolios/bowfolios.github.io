@@ -48,9 +48,12 @@ The Profiles page shows all the current defined profiles and their associated Pr
 
 The Projects page shows all of the currently defined Projects and their associated Profiles and Interests:
 
-![](images/profiles-page.png)
+![](images/projects-page.png)
 
 Finally, the Interests page shows all the currently defined Interests, and their associated Profiles and Projects:
+
+![](images/interests-page.png)
+
 
 ### Sign in and sign up
 
