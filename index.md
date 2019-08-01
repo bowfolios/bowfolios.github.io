@@ -51,11 +51,11 @@ Finally, the Interests page shows all the currently defined Interests, and their
 
 ### Sign in and sign up
 
-Click on the "Login" button in the upper right corner of the navbar, then select Sign in to go to this page and login if you have previously registered an account with the system:
+Click on the "Login" button in the upper right corner of the navbar, then select "Sign in" to go to the following page and login. You must have been previously registered with the system to use this option:
  
 ![](images/signin-page.png)
   
-Alternatively, you can use this page to create a new account and sign in:
+Alternatively, you can select "Sign up" to go to the following page and register as a new user:
 
 ![](images/signup-page.png)
 
@@ -64,6 +64,13 @@ Alternatively, you can use this page to create a new account and sign in:
 After logging in, you are taken to the home page, which presents a form where you can complete and/or update your personal profile:
 
 ![](images/home-page.png)
+
+### Add Project page
+
+Once you are logged in, you can define new projects with the Add Project page:
+
+![](images/add-project-page.png)
+
 
 ### Filter page
 
