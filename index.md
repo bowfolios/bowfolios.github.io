@@ -296,7 +296,7 @@ As of the time of writing, this screenshot shows that there is an ongoing task (
 
 ## Walkthrough videos
 
-BowFolios is intended as a model of how an ICS 314 project could be organized and executed. Here are several videos totaling about 90 minutes hat walks you through various aspects of the system:
+BowFolios is intended as a model of how an ICS 314 project could be organized and executed. Here are videos that walk you through various aspects of the system:
 
 * [BowFolios Part 1: Application Overview (5 min)](https://www.youtube.com/watch?v=gr55MMWD8ok)
 * [BowFolios Part 2: Application Structure and Control Flow (14 min)](https://www.youtube.com/watch?v=LYh06HSYv54)
@@ -304,6 +304,7 @@ BowFolios is intended as a model of how an ICS 314 project could be organized an
 * [BowFolios Part 4: Forms and Meteor Methods (20 min)](https://www.youtube.com/watch?v=5qim9mXpbTM)
 * [BowFolios Part 5: Loading data using Assets (8 min)](https://www.youtube.com/watch?v=NzrTzBPCJPo)
 * [BowFolios Part 6: Design Patterns in BowFolios (22 min)](https://www.youtube.com/watch?v=yP-t44HBCPQ)
+* [BowFolios Part 7: End-to-End testing in BowFolios (24 min)](https://www.youtube.com/watch?v=B8TSiCLBeaA)
 
 ## Example enhancements
 
