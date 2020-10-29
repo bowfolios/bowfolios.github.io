@@ -254,6 +254,14 @@ Bowfolios is meant to illustrate the use of Meteor for developing an initial pro
 
 (Note that these changes do not need to be implemented for ICS 314, although they are relatively straightforward to accomplish.)
 
+## Continuous Integration
+
+![ci-badge](https://github.com/bowfolios/bowfolios/workflows/ci-bowfolios/badge.svg)
+
+BowFolios uses [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) to automatically run ESLint and TestCafe each time a commit is made to the default branch.  You can see the results of all recent "workflows" at [https://github.com/bowfolios/bowfolios/actions](https://github.com/bowfolios/bowfolios/actions).
+
+The workflow definition file is quite simple and is located at [https://github.com/bowfolios/bowfolios/blob/master/.github/workflows/ci.yml])(https://github.com/bowfolios/bowfolios/blob/master/.github/workflows/ci.yml).
+
 ## Development History
 
 The development process for BowFolios conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314f19/modules/project-management/) practices. In a nutshell:
