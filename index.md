@@ -5,6 +5,7 @@
 * [Community Feedback](#community-feedback)
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
+* [Continuous Integration](#continuous-integration)
 * [Walkthrough videos](#walkthrough-videos)
 * [Example enhancements](#example-enhancements)
 
@@ -260,7 +261,8 @@ Bowfolios is meant to illustrate the use of Meteor for developing an initial pro
 
 BowFolios uses [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) to automatically run ESLint and TestCafe each time a commit is made to the default branch.  You can see the results of all recent "workflows" at [https://github.com/bowfolios/bowfolios/actions](https://github.com/bowfolios/bowfolios/actions).
 
-The workflow definition file is quite simple and is located at [https://github.com/bowfolios/bowfolios/blob/master/.github/workflows/ci.yml])(https://github.com/bowfolios/bowfolios/blob/master/.github/workflows/ci.yml).
+The workflow definition file is quite simple and is located at
+[.github/workflows/ci.yml](https://github.com/bowfolios/bowfolios/blob/master/.github/workflows/ci.yml).
 
 ## Development History
 
