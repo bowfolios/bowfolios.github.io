@@ -1,6 +1,7 @@
 ## Table of contents
 
 * [Overview](#overview)
+* [Deployment](#deployment)
 * [User Guide](#user-guide)
 * [Community Feedback](#community-feedback)
 * [Developer Guide](#developer-guide)
@@ -8,6 +9,7 @@
 * [Continuous Integration](#continuous-integration)
 * [Walkthrough videos](#walkthrough-videos)
 * [Example enhancements](#example-enhancements)
+* [Team}(#team)
 
 ## Overview
 
@@ -29,6 +31,10 @@ It also provides code that implements a variety of useful design concepts, inclu
 * Authentication using the built-in Meteor accounts package along with Sign Up and Sign In pages.
 * Authorization examples: certain pages are public (Profiles, Projects, Interests), while other pages require login (AddProject, Filter).
 * Use of Meteor Assets to initialize the database (helpful when initialization exceeds settings file size limits).
+
+## Deployment
+
+A live deployment of BowFolios is available at [https://bowfolios.org](https://bowfolios.org).
 
 ## User Guide
 
@@ -328,6 +334,10 @@ There are a number of simple enhancements you can make to the system to become b
 * It would be nice for users to only be able to edit the Projects that they have created.  Add an "owner" field to the Project collection, and then only allow a user to edit a Project definition if they own it.
 * The error message associated with trying to define a new Project with an existing Project name is uninformative. Try it out for yourself to see what happens. Fix this by improving the associated Meteor Method to "catch" errors of this type and re-throw with a more informative error message.
 * The testcafe acceptance tests only test successful form submissions. Add a test in which you fill out a form incorrectly (perhaps omitting a required field) and then test to ensure that the form does not submit successfully.
+
+## Team
+
+BowFolios is designed, implemented, and maintained by [Philip Johnson](https://philipmjohnson.org).
 
 
 
