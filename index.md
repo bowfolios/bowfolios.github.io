@@ -1,3 +1,5 @@
+# Bowfolios
+
 ## Table of contents
 
 * [Overview](#overview)
@@ -17,7 +19,7 @@ BowFolios is an example web application that provides pages to view and (in some
 
 * [Meteor](https://www.meteor.com/) for Javascript-based implementation of client and server code.
 * [React](https://reactjs.org/) for component-based UI implementation and routing.
-* [Semantic UI React](https://react.semantic-ui.com/) CSS Framework for UI design.
+* [React Bootstrap](https://react-bootstrap.github.io/) CSS Framework for UI design.
 * [Uniforms](https://uniforms.tools/) for React and Semantic UI-based form design and display.
 
 It also provides code that implements a variety of useful design concepts, including:
@@ -50,7 +52,7 @@ The Profiles page shows all the current defined profiles and their associated Pr
 
 ![](images/profiles-page.png)
 
-The Projects page shows all of the currently defined Projects and their associated Profiles and Interests:
+The Projects page shows all the currently defined Projects and their associated Profiles and Interests:
 
 ![](images/projects-page.png)
 
@@ -333,7 +335,7 @@ There are a number of simple enhancements you can make to the system to become b
 
 ## Team
 
-BowFolios is designed, implemented, and maintained by [Philip Johnson](https://philipmjohnson.org).
+BowFolios is designed, implemented, and maintained by [Philip Johnson](https://philipmjohnson.org) and [Cam Moore](https://cammoore.github.io/).
 
 
 
